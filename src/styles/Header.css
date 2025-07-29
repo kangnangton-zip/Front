@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  height: 292px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  width: 117px;
+  height: 144px;
+}
+
+/* 헤더, 푸터 logo_text 동일 */
+.logo_text {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 48px;
+}
