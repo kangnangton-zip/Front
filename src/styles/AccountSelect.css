@@ -1,0 +1,65 @@
+section {
+  width: 835px;
+  height: 839px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section h1 {
+  font-family: "Inter";
+  font-style: semibold;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 97px;
+}
+
+section .login_box {
+  width: 835px;
+  height: 128px;
+  border-radius: 30px;
+  margin-top: 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 148px;
+}
+
+section .naver {
+  background-color: #66bb4f;
+}
+
+.google p {
+  color: #000000;
+}
+
+section .google {
+  background-color: #eaeaea;
+}
+
+.login_box .logo {
+  width: 65px;
+  height: 64px;
+  padding-left: 58px;
+}
+
+.login_box p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text {
+  margin-top: 33px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.text span {
+  color: #a6d5d9;
+}
