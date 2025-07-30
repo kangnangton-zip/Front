@@ -7,7 +7,7 @@ function AccountSelPage() {
     <>
       <Header />
       <AccountSelect />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -1,6 +1,6 @@
 section {
   width: 835px;
-  height: 645px;
+  height: 839px;
   margin: 0 auto;
   text-align: center;
 }
@@ -17,7 +17,7 @@ section .login_box {
   width: 835px;
   height: 128px;
   border-radius: 30px;
-  margin-top: 50px;
+  margin-top: 32px;
 
   display: flex;
   align-items: center;
