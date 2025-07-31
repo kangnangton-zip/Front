@@ -3,38 +3,38 @@ footer {
   background-color: #ffffff;
 }
 
-.logo_box {
+.footer-logo {
   display: flex;
   align-items: center;
   padding-left: 162px;
 }
 
-.footer_logo_img img {
+.footer-logo-img {
   width: 99px;
   height: 111px;
 }
 
-.logo_box .logo_text {
+.footer-logo .logo-text {
   color: #000000;
 }
 
-.footer_box {
+.footer-info {
   display: flex;
   align-items: flex-end;
   padding-left: 162px;
 }
 
-.footer_box .footer_text {
+.footer-info .comapny-info {
   width: 835px;
   height: 116px;
 }
 
-.footer_box .footer_text p {
+.footer-info .comapny-info p {
   color: #000000;
   font-size: 18px;
 }
 
-.footer_box .team_text {
+.footer-info .team-name {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
