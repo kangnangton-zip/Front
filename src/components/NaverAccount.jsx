@@ -1,28 +1,28 @@
 import "../styles/NaverAccount.css";
-// import logoImg from "../assets/logo_footer.png";
+import logoImg from "../assets/logo_footer.png";
 import naverImg from "../assets/naver_login_logo.png";
 
 function NaverAccount() {
   return (
-    <div className="naver_account">
-      <div className="login_container">
-        <div className="naver_header">
+    <div className="naver-account">
+      <div className="login-container">
+        <div className="naver-header">
           <img src={naverImg} alt="naver" />
           <p>NAVER 계정으로 로그인</p>
         </div>
-        <div className="account_selection">
-          <div className="account_selection_title">
-            <div className="logo_box">
-              {/* <img src={logoImg} alt="logo" className="logo" /> */}
+        <div className="account-selection">
+          <div className="account-selection-title">
+            <div className="logo-box">
+              <img src={logoImg} alt="logo" className="naver-logo" />
               <p>HACKIYE</p>
             </div>
-            <div className="account_list_box">
+            <div className="account-list-box">
               <div className="account"></div>
             </div>
           </div>
         </div>
       </div>
-      <div className="language_selector">한국어 | English</div>
+      <div className="language-selector">한국어 | English</div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.naver_account {
+.naver-account {
   margin-top: 40px;
   position: absolute;
   left: 300px;
@@ -8,7 +8,7 @@
   background-color: #191919;
 }
 
-.login_container {
+.login-container {
   width: 799px;
   height: 341px;
   margin: 16px 20px 0 20px;
@@ -17,21 +17,21 @@
   background-color: #fafafa;
 }
 
-.naver_header {
+.naver-header {
   display: flex;
   align-items: center;
   gap: 7px;
   border-bottom: 1px solid #a6a6a6;
 }
 
-.naver_header img {
+.naver-header img {
   width: 37px;
   height: 38px;
   padding-top: 6px;
   padding-left: 12px;
 }
 
-.naver_header p {
+.naver-header p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -39,7 +39,19 @@
   line-height: 18px;
 }
 
-.language_selector {
+.account-selection-title .logo-box .naver-logo {
+  width: 40px;
+  height: 45px;
+}
+
+.account-selection-title .logo-box p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.language-selector {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
