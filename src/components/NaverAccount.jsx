@@ -8,17 +8,17 @@ function NaverAccount() {
     <div className="naver-account">
       <div className="login-container">
         <div className="naver-header">
-          <img src={naverImg} alt="naver" className="naver-logo"/>
+          <img src={naverImg} alt="naver" className="naver-logo" />
           <p>NAVER 계정으로 로그인</p>
         </div>
         <div className="account-selection">
           <div className="account-selection-box">
             <div className="account-selection-left">
-              <div className="logo-box">
+              <div className="logo-box-naver">
                 <img src={logoImg} alt="logo" className="logo" />
                 <p>HACKIYE</p>
               </div>
-              <div className="account-selection-title">계정 선택</div>
+              <div className="account-selection-title-naver">계정 선택</div>
             </div>
             <div className="account-selection-right">
               <div className="account">

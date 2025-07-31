@@ -14,11 +14,11 @@ function GoogleAccount() {
         <div className="account-selection">
           <div className="account-selection-box">
             <div className="account-selection-left">
-              <div className="logo-box">
+              <div className="logo-box-google">
                 <img src={logoImg} alt="logo" className="logo" />
                 <p>HACKIYE</p>
               </div>
-              <div className="account-selection-title">계정 선택</div>
+              <div className="account-selection-title-google">계정 선택</div>
               <p>
                 <a>OpenAI</a>(으)로 이동
               </p>
