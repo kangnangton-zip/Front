@@ -44,24 +44,24 @@
   justify-content: space-between;
 }
 
-.account-selection-left .logo-box {
+.account-selection-left .logo-box-naver {
   display: flex;
   align-items: center;
 }
 
-.account-selection-left .logo-box .logo {
+.account-selection-left .logo-box-naver .logo {
   width: 40px;
   height: 45px;
 }
 
-.account-selection-left .logo-box p {
+.account-selection-left .logo-box-naver p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   line-height: 15px;
 }
 
-.account-selection-left .account-selection-title {
+.account-selection-left .account-selection-title-naver {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;

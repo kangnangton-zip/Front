@@ -43,25 +43,25 @@
   justify-content: space-between;
 }
 
-.account-selection-left .logo-box {
+.account-selection-left .logo-box-google {
   display: flex;
   align-items: center;
   color: #e3e3e3;
 }
 
-.account-selection-left .logo-box .logo {
+.account-selection-left .logo-box-google .logo {
   width: 40px;
   height: 45px;
 }
 
-.account-selection-left .logo-box p {
+.account-selection-left .logo-box-google p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   line-height: 15px;
 }
 
-.account-selection-left .account-selection-title {
+.account-selection-left .account-selection-title-google {
   color: #e3e3e3;
   font-family: "Inter";
   font-style: normal;
