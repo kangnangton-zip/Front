@@ -5,11 +5,11 @@ import Button from "./Button";
 function MainContent() {
   return (
     <main>
-      <div className="main_wrapper">
-        <div className="blue_bubble"></div>
-        <div className="pupple_bubble"></div>
-        <div className="section about_section">
-          <div className="text_box">
+      <div className="main-container">
+        <div className="blue-bubble"></div>
+        <div className="pupple-bubble"></div>
+        <div className="section about-section">
+          <div className=" text-box about-text">
             <h1>
               대규모 해킹사태,
               <br /> 당신의 계정은 안전할까요?
@@ -20,24 +20,24 @@ function MainContent() {
             </p>
           </div>
         </div>
-        <div className="section hack_section">
-          <img src={hackImg} alt="해킹 이미지" />
-          <div className="text_box">
+        <div className="section hack-section">
+          <img src={hackImg} alt="해킹 이미지" className="hack-img" />
+          <div className="text-box hack-text">
             <h1>해킹</h1>
             <p>HACKIEY에서는 해킹 확인부터 보안 솔루션까지 알려드립니다.</p>
           </div>
         </div>
-        <div className="section feat_section">
+        <div className="section feat-section">
           <h1>
             HACKIEY는 <br />
             당신만의 디지털 방패입니다
           </h1>
-          <div className="feat_box">
-            <div className="box hack_box">
+          <div className="feat-box">
+            <div className="feat-item hack-check">
               <p>해킹 여부 확인</p>
               <Button />
             </div>
-            <div className="box list_box">
+            <div className="feat-item list-check">
               <p>해킹된 사이트 확인</p>
               <Button />
             </div>
