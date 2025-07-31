@@ -1,0 +1,51 @@
+.naver_account {
+  margin-top: 40px;
+  position: absolute;
+  left: 300px;
+  z-index: 10;
+  width: 840px;
+  height: 413px;
+  background-color: #191919;
+}
+
+.login_container {
+  width: 799px;
+  height: 341px;
+  margin: 16px 20px 0 20px;
+  border-radius: 30px;
+  color: #000000;
+  background-color: #fafafa;
+}
+
+.naver_header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-bottom: 1px solid #a6a6a6;
+}
+
+.naver_header img {
+  width: 37px;
+  height: 38px;
+  padding-top: 6px;
+  padding-left: 12px;
+}
+
+.naver_header p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.language_selector {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  margin-top: 20px;
+  margin-left: 44px;
+}
