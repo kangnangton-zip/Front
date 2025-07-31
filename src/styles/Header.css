@@ -14,11 +14,3 @@ header {
   width: 117px;
   height: 144px;
 }
-
-/* 헤더, 푸터 logo_text 동일 */
-.logo-text {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 600;
-  font-size: 48px;
-}

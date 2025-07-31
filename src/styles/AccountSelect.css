@@ -1,11 +1,11 @@
-section {
+.account-select {
   width: 835px;
   height: 839px;
   margin: 0 auto;
   text-align: center;
 }
 
-section h1 {
+.account-select h1 {
   font-family: "Inter";
   font-style: semibold;
   font-weight: 600;
@@ -13,7 +13,7 @@ section h1 {
   line-height: 97px;
 }
 
-section .login_box {
+.account-select .login-button {
   width: 835px;
   height: 128px;
   border-radius: 30px;
@@ -24,25 +24,25 @@ section .login_box {
   gap: 148px;
 }
 
-section .naver {
+.account-select .naver-login {
   background-color: #66bb4f;
 }
 
-.google p {
+.google-login p {
   color: #000000;
 }
 
-section .google {
+.account-select .google-login {
   background-color: #eaeaea;
 }
 
-.login_box .logo {
+.login-button .login-logo {
   width: 65px;
   height: 64px;
   padding-left: 58px;
 }
 
-.login_box p {
+.login-button p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -50,7 +50,7 @@ section .google {
   line-height: 36px;
 }
 
-.text {
+.terms-text {
   margin-top: 33px;
   font-family: "Inter";
   font-style: normal;
@@ -60,6 +60,6 @@ section .google {
   text-align: left;
 }
 
-.text span {
+.terms-text span {
   color: #a6d5d9;
 }
