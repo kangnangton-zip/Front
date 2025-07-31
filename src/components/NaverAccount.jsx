@@ -11,6 +11,7 @@ function NaverAccount() {
           <p>NAVER 계정으로 로그인</p>
         </div>
         <div className="account-selection">
+
           <div className="account-selection-title">
             <div className="logo-box">
               <img src={logoImg} alt="logo" className="naver-logo" />
