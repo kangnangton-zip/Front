@@ -4,10 +4,12 @@ import logoImg from "../assets/logo_header.png";
 function Header() {
   return (
     <header>
-      <div className="header_logo_img">
-        <img src={logoImg} alt="logImg"></img>
+      <div className="logo-container">
+        <div className="header-logo">
+          <img src={logoImg} alt="logImg" className="logo-img"></img>
+          <div className="logo-text">HACKIYE</div>
+        </div>
       </div>
-      <div className="logo_text">HACKIYE</div>
     </header>
   );
 }
