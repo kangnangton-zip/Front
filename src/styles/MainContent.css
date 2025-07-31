@@ -1,9 +1,9 @@
-.main_wrapper {
+.main-container {
   position: relative;
   overflow: hidden;
 }
 
-.blue_bubble {
+.blue-bubble {
   position: absolute;
   z-index: 0;
   width: 856px;
@@ -17,7 +17,7 @@
   filter: blur(40px);
 }
 
-.pupple_bubble {
+.pupple-bubble {
   position: absolute;
   z-index: 0;
   width: 802px;
@@ -33,13 +33,14 @@
 
 .section {
   height: 732px;
-  /* border-bottom: 1px solid wheat; */
 }
 
 .section h1 {
+  font-family: "Inter";
   font-weight: 600;
   font-size: 80px;
   line-height: 97px;
+
   text-shadow: 2px 2px 7px #185de8;
 }
 
@@ -49,39 +50,38 @@
   line-height: 48px;
 }
 
-.about_section .text_box {
+.about-section .text-box {
   position: relative;
   z-index: 1;
   margin-top: 240px;
   margin-left: 160px;
 }
 
-.about_section h1 {
+.about-section h1 {
   width: 893px;
   height: 194px;
   text-align: left;
-  /* font-family: "Inter";
-  font-style: italic; */
+  font-family: "Inter";
 }
 
-.about_section p {
+.about-section p {
   margin-top: 26px;
   width: 734px;
   height: 96px;
 }
 
-.hack_section {
+.hack-section {
   display: flex;
   gap: 6px;
 }
 
-.hack_section img {
+.hack-section img {
   width: 610px;
   height: 547px;
   margin-left: 135px;
 }
 
-.hack_section .text_box {
+.hack-section .text-box {
   position: relative;
   z-index: 1;
   text-align: right;
@@ -89,20 +89,20 @@
   margin-right: 160px;
 }
 
-.hack_section .text_box p {
+.hack-section .text-box p {
   width: 529px;
   height: 96px;
   margin-top: 123px;
 }
 
-.feat_section h1 {
+.feat-section h1 {
   width: 932px;
   height: 194px;
   margin: 0 auto;
   text-align: center;
 }
 
-.feat_section .feat_box {
+.feat-section .feat-box {
   width: 1074px;
   margin: 252px 183px 0 183px;
   display: flex;
@@ -110,15 +110,15 @@
   justify-content: center;
 }
 
-.hack_box,
-.list_box {
+.hack-check,
+.list-check {
   display: flex;
   gap: 40px;
   flex-direction: column;
   align-items: center;
 }
 
-.feat_box p {
+.feat-box p {
   font-family: "Inter";
   font-weight: 600;
   font-size: 70px;
