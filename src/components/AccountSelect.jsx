@@ -2,11 +2,13 @@ import "../styles/AccountSelect.css";
 import naverLogo from "../assets/naver_logo.png";
 import googleLogo from "../assets/google_logo.png";
 import NaverAccount from "./NaverAccount";
+import GoogleAccount from "./GoogleAccount";
 
 function AccountSelect() {
   return (
     <>
-    <NaverAccount />
+      {/* <NaverAccount /> */}
+      <GoogleAccount />
       <div className="account-select">
         <h1 className="select-title">계정 연동</h1>
         <div className="login-button naver-login">
