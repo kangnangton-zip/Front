@@ -1,6 +1,6 @@
 .account-select {
   width: 835px;
-  height: 839px;
+  height: 500px;
   margin: 0 auto;
   text-align: center;
 }
@@ -9,14 +9,15 @@
   font-family: "Inter";
   font-style: semibold;
   font-weight: 600;
-  font-size: 80px;
-  line-height: 97px;
+  font-size: 60px;
+  line-height: 127px;
+  margin-bottom: 50px;
 }
 
 .account-select .login-button {
   width: 835px;
   height: 128px;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-top: 32px;
 
   display: flex;
@@ -29,17 +30,23 @@
 }
 
 .google-login p {
-  color: #000000;
+  color: #353535;
 }
 
 .account-select .google-login {
   background-color: #eaeaea;
 }
 
-.login-button .login-logo {
+.login-button .naver-logo {
   width: 65px;
   height: 64px;
   padding-left: 58px;
+}
+
+.login-button .google-logo {
+  width: 55px;
+  height: 56px;
+  padding-left: 61px;
 }
 
 .login-button p {
@@ -51,13 +58,14 @@
 }
 
 .terms-text {
-  margin-top: 33px;
+  margin-top: 17px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 25px;
+  line-height: 30px;
   text-align: left;
+  padding-left: 20px;
 }
 
 .terms-text span {

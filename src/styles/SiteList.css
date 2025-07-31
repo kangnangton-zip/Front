@@ -23,11 +23,12 @@
 
 .site-list-cards {
   margin-left: 160px;
+  padding-top: 40px;
 }
 
 .site-card {
   width: 1120px;
-  height: 270px;
+  height: 228px;
   margin-top: 47px;
   border-radius: 30px;
   background-color: #d9d9d9;
@@ -35,33 +36,38 @@
   color: #000000;
 }
 
-.card-left .site-img {
-  width: 165px;
-  height: 165px;
+.card-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-top: 27px;
   margin-left: 75px;
+}
+
+.card-left .site-img {
+  width: 130px;
+  height: 130px;
   border-radius: 20px;
 }
 
 .card-left .site-name {
+  margin-top: 10px;
   font-family: "Inter";
   font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  padding-left: 64px;
-  padding-bottom: 18px;
+  font-size: 32px;
+  line-height: 39px;
   text-align: center;
 }
 
 .card-right {
-  width: 649px;
+  width: 727px;
   height: 240px;
   padding-top: 12px;
-  padding-left: 99px;
+  padding-left: 80px;
   font-family: "Inter";
   font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
 .box1 {

@@ -1,7 +1,7 @@
 import "../styles/NaverAccount.css";
-import logoImg from "../assets/logo_footer.png";
+import logoImg from "../assets/logo_white.png";
 import naverImg from "../assets/naver_login_logo.png";
-import naverGestImg from "../assets/naver_guest.png";
+import naverGestImg from "../assets/guest.png";
 
 function NaverAccount() {
   return (
@@ -16,7 +16,6 @@ function NaverAccount() {
             <div className="account-selection-left">
               <div className="logo-box-naver">
                 <img src={logoImg} alt="logo" className="logo" />
-                <p>HACKIYE</p>
               </div>
               <div className="account-selection-title-naver">계정 선택</div>
             </div>
