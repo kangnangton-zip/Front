@@ -27,7 +27,9 @@ function GoogleAccount() {
               </p>
             </div>
             <div className="account-selection-right">
-              <GoogleAccountList id="김강냉" email="01034762742ab@gmail.com" />
+              <Link to="http://localhost:5173/google/result">
+               <GoogleAccountList id="김강냉" email="01034762742ab@gmail.com" />
+              </Link>
               <GoogleAccountList id="김강냉" email="bergi4025@gmail.com" />
               <GoogleAccountList id="김강냉" email="id01034665629@gmail.com" />
               <GoogleAccountList id="김강냉" email="mijsl4608@gmail.com" />

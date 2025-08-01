@@ -24,7 +24,9 @@ function NaverAccount() {
               <div className="account-selection-title-naver">계정 선택</div>
             </div>
             <div className="account-selection-right">
+              <Link to="http://localhost:5173/naver/result">
               <NaverAccountList email="netstat3476@naver.com" />
+              </Link>
               <NaverAccountList email="bellerose0923@naver.com" />
               <NaverAccountList email="joo060531jooha@naver.com" />
               <NaverAccountList email="아이디" />

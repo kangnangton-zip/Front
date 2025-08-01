@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import "../styles/ShowResult.css";
 import { useLocation } from "react-router-dom";
 import normalizeId from "../utils/normalizedTd.js";
+import axios from "axios";
 
 function ShowNaverResult() {
   const [open, setOpen] = useState(false);
+  const [site, setSite] = useState([]); 
   const location = useLocation();
 
   const handleToggle = () => {
@@ -26,39 +28,38 @@ function ShowNaverResult() {
     }
   }, [location]);
 
-  const result = [
-    2,
-    5,
-    "알바몬",
-    "디올",
-    "아디다스",
-    "티파니",
-    "GS Shop",
-    "알바몬",
-    "대성마이맥",
-    "아디다스",
-    "티파니",
-    "어니언",
-  ];
-  const list = result.slice(2);
+  useEffect(() => {
+    axios.get("http://localhost:8000/api/naver")
+  .then((res) => {
+    console.log("응답 전체:", res);         // 전체 확인
+    console.log("응답 데이터:", res.data);   // 핵심 데이터
+    setSite(res.data);
+  })   
+  .catch((err) => {
+    console.error("API 오류:", err);
+  });
+  }, []);
+
 
   return (
     <div className="show-result-container">
       <div className="show-result-header">
         <h1 className="show-result-header-text">
-          xsdasdwa@safsa.com님의
+          netstat3476@naver.com님의
           <br /> 해킹 검사 결과는...
         </h1>
-        <div className="show-result-summary-container">
-          <div className="show-result-summary">
-            <div className="result-number">{result[0]}</div>
-            <div className="result-name">Hibp</div>
-          </div>
-          <div className="show-result-summary">
-            <div className="result-number">{result[1]}</div>
-            <div className="result-name">유출</div>
-          </div>
-        </div>
+        {site[0] && (
+  <div className="show-result-summary-container">
+    <div className="show-result-summary">
+      <div className="result-number">{site[0][0]}</div>
+      <div className="result-name">Hibp</div>
+    </div>
+    <div className="show-result-summary">
+      <div className="result-number">{site[0][1]}</div>
+      <div className="result-name">유출</div>
+    </div>
+  </div>
+)}
         <div className="show-result-list-container">
           <div className="show-result-list">
             <div className="list-toggle-box" onClick={handleToggle}>
@@ -67,13 +68,11 @@ function ShowNaverResult() {
             </div>
             {open && (
               <div className="lists">
-                <ul>
-                  {list.map((item, index) => (
-                    <li key={index} className="list">
-                      <a href={`/sites#${normalizeId(item)}`}>{item}</a>
-                    </li>
-                  ))}
-                </ul>
+                 <ul>
+        <li className="list">
+          <a href={`/sites#${"아디다스"}`}>아디다스</a>
+        </li>
+    </ul>
               </div>
             )}
           </div>

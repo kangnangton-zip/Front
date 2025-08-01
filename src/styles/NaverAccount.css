@@ -1,7 +1,7 @@
 .naver-account {
   margin-top: 180px;
   position: absolute;
-  left: 300px;
+  left: 350px;
   z-index: 10;
   width: 840px;
   height: 413px;
@@ -83,6 +83,14 @@
   margin-top: 4px;
   gap: 11px;
   border-bottom: 1px solid #a6a6a6;
+}
+
+.account-text-box{
+  color: #ffffff;
+}
+
+.account-email{
+  color: #ffffff;
 }
 
 .account-selection-right .account .profie-img {
