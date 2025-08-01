@@ -1,3 +1,7 @@
+.show-result-container {
+  padding-top: 64px;
+}
+
 .show-result-header .show-result-header-text {
   text-align: center;
   font-family: "Inter";
@@ -47,26 +51,34 @@
 }
 
 .show-result-list-container {
-  margin-top: 120px;
-  padding-bottom: 120px;
+  margin-top: 100px;
+  padding-bottom: 160px;
+  display: flex;
+  justify-content: center;
 }
 
 .show-result-list-container .show-result-list {
+  height: 680px;
+}
+
+.show-result-list-container .show-result-list a {
+  color: #ffffff;
+}
+
+.show-result-list-container .show-result-list .list-toggle-box {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 31px;
-  margin-bottom: 48px;
 }
-
-.show-result-list .toggle-shape {
+/* .show-result-list .list-toggle-box .toggle-shape {
   width: 0;
   height: 0;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-top: 40px solid #f25c5c;
   background: none;
-}
+} */
 
 .show-result-list .toggle-name {
   width: 632px;
@@ -78,4 +90,40 @@
 
   text-shadow: 2px 2px 7px #f84f52;
   border-bottom: 1px solid #ffffff;
+}
+
+.show-result-list-container .show-result-list .lists {
+  padding-left: 130px;
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.show-result-list-container .show-result-list .lists .list {
+  margin-top: 16px;
+}
+
+.show-result-list-container .show-result-list .lists .list a:hover {
+  color: #185de8;
+  text-decoration: underline;
+}
+
+/* 초기 삼각형 - 오른쪽 방향 */
+.toggle-shape {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid #f25c5c;
+  transition: transform 0.3s ease;
+}
+
+/* 아래 방향 삼각형 */
+.toggle-shape.down {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 40px solid #f25c5c;
+  border-bottom: none;
 }

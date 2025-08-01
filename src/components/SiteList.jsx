@@ -1,30 +1,43 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import siteList from "../assets/siteList.js";
 import "../styles/SiteList.css";
 import Button from "./Button";
 import { useEffect, useRef } from "react";
 import SiteCard from "./SiteCard.jsx";
+import normalizeId from "../utils/normalizedTd.js";
 
 function SiteList() {
   const scrollRef = useRef(null);
+  const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
+    if (!location.hash) return;
 
-    const onWheel = (e) => {
-      if (e.deltaY === 0) return;
-      e.preventDefault();
-      el.scrollLeft += e.deltaY;
-    };
+    const rawId = decodeURIComponent(location.hash.replace("#", ""));
+    const id = normalizeId(rawId);
+    const container = scrollRef.current;
+    if (!container) return;
 
-    el.addEventListener("wheel", onWheel, { passive: false });
+    const element = document.getElementById(id);
+    if (!element) return;
 
-    return () => {
-      el.removeEventListener("wheel", onWheel);
-    };
-  }, []);
+    // 딜레이 주기 (100~200ms 정도)
+    setTimeout(() => {
+      // 가로 스크롤 중앙 정렬
+      const elementLeft = element.offsetLeft;
+      const elementWidth = element.offsetWidth;
+      const containerWidth = container.offsetWidth;
+      const scrollLeft = elementLeft - containerWidth / 2 + elementWidth / 2;
+      container.scrollTo({ left: scrollLeft, behavior: "smooth" });
+
+      // 세로 스크롤 중앙 정렬
+      const rect = element.getBoundingClientRect();
+      const absoluteTop = rect.top + window.pageYOffset;
+      const middle = absoluteTop - window.innerHeight / 2 + rect.height / 2;
+      window.scrollTo({ top: middle, behavior: "smooth" });
+    }, 150);
+  }, [location]);
 
   const goToAccount = () => {
     navigate("/account");
@@ -40,7 +53,7 @@ function SiteList() {
         <p className="header-text">2025년 해킹된 사이트들을 정리합니다.</p>
       </div>
       <div className="site-list-cards-wrapper">
-        <div className="site-list-cards">
+        <div className="site-list-cards" ref={scrollRef}>
           {siteList.map((site, index) => (
             <SiteCard site={site} index={index} />
           ))}

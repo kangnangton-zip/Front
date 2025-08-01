@@ -21,7 +21,7 @@ function Footer() {
               000번길 00, 0동 0층 000호 | 000000000000 | ©2025 XXXXX Inc.
             </p>
           </div>
-          <div className="team-name">zip가고싶ㄷr</div>
+          <div className="team-name">zip가고싶dir</div>
         </div>
       </div>
     </footer>
