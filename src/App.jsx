@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AccountSelPage from "./pages/AccountSelPage";
+import AccountSelPage from "./pages/AccountSelectPage";
 import MainPage from "./pages/MainPage";
 import SiteListPage from "./pages/SiteListPage";
 import NaverAccount from "./components/NaverAccount";

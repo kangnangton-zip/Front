@@ -2,6 +2,8 @@ import "../styles/GoogleAccount.css";
 import logoImg from "../assets/logo_white.png";
 import googleImg from "../assets/google_logo.png";
 import googleGestImg from "../assets/guest.png";
+import GoogleAccountList from "./GoogleAccountList";
+import { Link } from "react-router-dom";
 
 function GoogleAccount() {
   return (
@@ -15,7 +17,9 @@ function GoogleAccount() {
           <div className="account-selection-box">
             <div className="account-selection-left">
               <div className="logo-box-google">
-                <img src={logoImg} alt="logo" className="logo" />
+                <Link to="/index">
+                  <img src={logoImg} alt="logo" className="logo" />
+                </Link>
               </div>
               <div className="account-selection-title-google">계정 선택</div>
               <p className="google-text">
@@ -23,34 +27,10 @@ function GoogleAccount() {
               </p>
             </div>
             <div className="account-selection-right">
-              <div className="account">
-                <div className="profie-img"></div>
-                <div className="account-text-box">
-                  <p className="account-id">김강냉</p>
-                  <p className="account-email">01034762742ab@gmail.com</p>
-                </div>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <div className="account-text-box">
-                  <p className="account-id">이름</p>
-                  <p className="account-email">bergi4025@gmail.com</p>
-                </div>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <div className="account-text-box">
-                  <p className="account-id">이름</p>
-                  <p className="account-email">id01034665629@gmail.com</p>
-                </div>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <div className="account-text-box">
-                  <p className="account-id">이름</p>
-                  <p className="account-email">mijsl4608@gmail.com</p>
-                </div>
-              </div>
+              <GoogleAccountList id="김강냉" email="01034762742ab@gmail.com" />
+              <GoogleAccountList id="김강냉" email="bergi4025@gmail.com" />
+              <GoogleAccountList id="김강냉" email="id01034665629@gmail.com" />
+              <GoogleAccountList id="김강냉" email="mijsl4608@gmail.com" />
               <div className="another account">
                 <img
                   src={googleGestImg}
