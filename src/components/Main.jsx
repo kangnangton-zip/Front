@@ -25,16 +25,22 @@ function MainContent() {
               <br /> 당신의 계정은 안전할까요?
             </h1>
             <p>
-              현재 뉴스에서 심심치 않게 나오는 해킹 뉴스, 보안에 대한 불안이
-              커지고 있습니다.
+              현재 뉴스에서 심심치 않게 나오는 해킹 뉴스,
+              <br /> 보안에 대한 불안이 커지고 있습니다.
             </p>
           </div>
         </div>
         <div className="section hack-section">
           <img src={hackImg} alt="해킹 이미지" className="hack-img" />
           <div className="text-box hack-text">
-            <h1>해킹</h1>
-            <p>HACKIEY에서는 해킹 확인부터 보안 솔루션까지 알려드립니다.</p>
+            <h1>
+              해킹 여부 진단, <br />
+              더욱 다양하게
+            </h1>
+            <p>
+              HACKIEY에서는 다크웹, Hibp,
+              <br /> 유출사이트 확인까지 진단합니다.
+            </p>
           </div>
         </div>
         <div className="section feat-section">

@@ -7,7 +7,7 @@ import dailycafeImg from "../assets/dailycafe.png";
 import oliveyoungImg from "../assets/oliveyoung.png";
 import tiffanyImg from "../assets/tiffanyco.png";
 import mustitImg from "../assets/mustit.png";
-import adidasImg from "../assets/adidas.png";
+import adidasImg from "../assets/adidas.webp";
 
 const siteList = [
   {
