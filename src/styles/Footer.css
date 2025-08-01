@@ -6,6 +6,7 @@ footer {
 }
 
 .footer-logo .footer-link {
+  width: 302px;
   display: flex;
   align-items: center;
   padding-left: 162px;

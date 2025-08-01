@@ -31,50 +31,6 @@
   padding-top: 40px;
 }
 
-.site-card {
-  width: 1000px;
-  height: 208px;
-  margin-top: 47px;
-  border-radius: 30px;
-  background-color: #d9d9d9;
-  display: flex;
-  color: #000000;
-}
-
-.card-left {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 27px;
-  margin-left: 50px;
-}
-
-.card-left .site-img {
-  width: 130px;
-  height: 130px;
-  border-radius: 20px;
-}
-
-.card-left .site-name {
-  margin-top: 10px;
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 39px;
-  text-align: center;
-}
-
-.card-right {
-  width: 727px;
-  height: 240px;
-  padding-top: 12px;
-  padding-left: 55px;
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 42px;
-}
-
 .box1 {
   width: 998px;
   height: 119px;

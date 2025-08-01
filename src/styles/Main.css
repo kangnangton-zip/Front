@@ -1,6 +1,7 @@
 .main-container {
   position: relative;
   overflow: hidden;
+  padding-bottom: 32px;
 }
 
 .blue-bubble {

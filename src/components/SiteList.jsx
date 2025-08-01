@@ -3,6 +3,7 @@ import siteList from "../assets/siteList.js";
 import "../styles/SiteList.css";
 import Button from "./Button";
 import { useEffect, useRef } from "react";
+import SiteCard from "./SiteCard.jsx";
 
 function SiteList() {
   const scrollRef = useRef(null);
@@ -41,20 +42,7 @@ function SiteList() {
       <div className="site-list-cards-wrapper">
         <div className="site-list-cards">
           {siteList.map((site, index) => (
-            <div className="site-card" key={index}>
-              <div className="card-left">
-                <img
-                  src={site.imgUrl}
-                  alt={site.name}
-                  className="site-img"
-                ></img>
-                <h1 className="site-name">{site.name}</h1>
-              </div>
-              <div className="card-right">
-                <div className="site-date">{site.date}</div>
-                <div className="site-description">{site.description}</div>
-              </div>
-            </div>
+            <SiteCard site={site} index={index} />
           ))}
         </div>
       </div>

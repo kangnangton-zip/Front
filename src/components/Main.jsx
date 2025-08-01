@@ -1,4 +1,4 @@
-import "../styles/MainContent.css";
+import "../styles/Main.css";
 import hackImg from "../assets/main_img01.png";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
