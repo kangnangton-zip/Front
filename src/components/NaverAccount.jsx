@@ -1,7 +1,9 @@
 import "../styles/NaverAccount.css";
-import logoImg from "../assets/logo_footer.png";
+import logoImg from "../assets/logo_white.png";
 import naverImg from "../assets/naver_login_logo.png";
-import naverGestImg from "../assets/naver_guest.png";
+import naverGestImg from "../assets/guest.png";
+import NaverAccountList from "../components/NaverAccountList.jsx";
+import { Link } from "react-router-dom";
 
 function NaverAccount() {
   return (
@@ -15,28 +17,17 @@ function NaverAccount() {
           <div className="account-selection-box">
             <div className="account-selection-left">
               <div className="logo-box-naver">
-                <img src={logoImg} alt="logo" className="logo" />
-                <p>HACKIYE</p>
+                <Link to="/index">
+                  <img src={logoImg} alt="logo" className="logo" />
+                </Link>
               </div>
               <div className="account-selection-title-naver">계정 선택</div>
             </div>
             <div className="account-selection-right">
-              <div className="account">
-                <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
-              </div>
+              <NaverAccountList email="netstat3476@naver.com" />
+              <NaverAccountList email="bellerose0923@naver.com" />
+              <NaverAccountList email="joo060531jooha@naver.com" />
+              <NaverAccountList email="아이디" />
               <div className="another account">
                 <img
                   src={naverGestImg}

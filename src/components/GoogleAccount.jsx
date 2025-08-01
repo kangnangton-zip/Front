@@ -1,7 +1,9 @@
 import "../styles/GoogleAccount.css";
-import logoImg from "../assets/logo_footer.png";
+import logoImg from "../assets/logo_white.png";
 import googleImg from "../assets/google_logo.png";
-import googleGestImg from "../assets/google_guest.png";
+import googleGestImg from "../assets/guest.png";
+import GoogleAccountList from "./GoogleAccountList";
+import { Link } from "react-router-dom";
 
 function GoogleAccount() {
   return (
@@ -15,31 +17,20 @@ function GoogleAccount() {
           <div className="account-selection-box">
             <div className="account-selection-left">
               <div className="logo-box-google">
-                <img src={logoImg} alt="logo" className="logo" />
-                <p>HACKIYE</p>
+                <Link to="/index">
+                  <img src={logoImg} alt="logo" className="logo" />
+                </Link>
               </div>
               <div className="account-selection-title-google">계정 선택</div>
-              <p>
+              <p className="google-text">
                 <a>OpenAI</a>(으)로 이동
               </p>
             </div>
             <div className="account-selection-right">
-              <div className="account">
-                <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
-              </div>
-              <div className="account">
-                <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
-              </div>
+              <GoogleAccountList id="김강냉" email="01034762742ab@gmail.com" />
+              <GoogleAccountList id="김강냉" email="bergi4025@gmail.com" />
+              <GoogleAccountList id="김강냉" email="id01034665629@gmail.com" />
+              <GoogleAccountList id="김강냉" email="mijsl4608@gmail.com" />
               <div className="another account">
                 <img
                   src={googleGestImg}
