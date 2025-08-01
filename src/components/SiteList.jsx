@@ -39,6 +39,36 @@ function SiteList() {
     }, 150);
   }, [location]);
 
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const cards = container.querySelectorAll(".site-card");
+      const containerRect = container.getBoundingClientRect();
+      const centerY = containerRect.top + containerRect.height / 2;
+
+      cards.forEach((card) => {
+        const cardRect = card.getBoundingClientRect();
+        const cardCenterY = cardRect.top + cardRect.height / 2;
+        const distance = Math.abs(centerY - cardCenterY);
+
+        // 거리 기반 scale 계산 (최대 1, 최소 0.8)
+        const scale = Math.max(0.8, 1 - distance / 600);
+        card.style.transform = `scale(${scale})`;
+        card.style.transition = "transform 0.2s";
+        card.style.zIndex = scale === 1 ? 2 : 1;
+      });
+    };
+
+    container.addEventListener("scroll", handleScroll);
+    handleScroll(); // 초기 호출
+
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const goToAccount = () => {
     navigate("/account");
   };
@@ -59,8 +89,8 @@ function SiteList() {
           ))}
         </div>
       </div>
-      <div className="box1"></div>
-      <div className="box2"></div>
+      {/* <div className="box1"></div> */}
+      {/* <div className="box2"></div> */}
 
       <div className="feat-box">
         <div className="feat-item hack-check">
