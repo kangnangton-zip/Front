@@ -20,22 +20,19 @@ function SiteList() {
     if (!container) return;
 
     const element = document.getElementById(id);
+    // console.log(element);
     if (!element) return;
 
-    // 딜레이 주기 (100~200ms 정도)
     setTimeout(() => {
-      // 가로 스크롤 중앙 정렬
-      const elementLeft = element.offsetLeft;
-      const elementWidth = element.offsetWidth;
-      const containerWidth = container.offsetWidth;
-      const scrollLeft = elementLeft - containerWidth / 2 + elementWidth / 2;
-      container.scrollTo({ left: scrollLeft, behavior: "smooth" });
+      const elementTop = element.offsetTop;
+      const elementHeight = element.offsetHeight;
+      const containerHeight = container.clientHeight;
 
-      // 세로 스크롤 중앙 정렬
-      const rect = element.getBoundingClientRect();
-      const absoluteTop = rect.top + window.pageYOffset;
-      const middle = absoluteTop - window.innerHeight / 2 + rect.height / 2;
-      window.scrollTo({ top: middle, behavior: "smooth" });
+      console.log(container);
+
+      // 컨테이너 내 스크롤 중앙 정렬
+      const scrollTop = elementTop - containerHeight / 2 + elementHeight / 2;
+      container.scrollTo({ top: scrollTop, behavior: "smooth" });
     }, 150);
   }, [location]);
 
@@ -48,6 +45,43 @@ function SiteList() {
       const containerRect = container.getBoundingClientRect();
       const centerY = containerRect.top + containerRect.height / 2;
 
+      // // 스크롤이 맨 위에 있을 때
+      // if (container.scrollTop === 0) {
+      //   cards.forEach((card, idx) => {
+      //     if (idx === 0) {
+      //       card.style.transform = "scale(1)";
+      //       card.style.zIndex = 2;
+      //     } else {
+      //       card.style.transform = "scale(0.8)";
+      //       card.style.zIndex = 1;
+      //     }
+      //     card.style.transition = "transform 0.2s";
+      //   });
+      //   return;
+      // }
+
+      // // 스크롤이 맨 아래에 있을 때
+      // if (cards.length > 0) {
+      //   const lastCard = cards[cards.length - 1];
+      //   const lastCardRect = lastCard.getBoundingClientRect();
+      //   console.log(lastCardRect.bottom, containerRect.bottom);
+      //   // 마지막 카드의 하단이 컨테이너 하단에서 40px 이내로 가까워지면
+      //   if (Math.abs(lastCardRect.bottom - containerRect.bottom) < 40) {
+      //     cards.forEach((card, idx) => {
+      //       if (idx === cards.length - 1) {
+      //         card.style.transform = "scale(1)";
+      //         card.style.zIndex = 2;
+      //       } else {
+      //         card.style.transform = "scale(0.8)";
+      //         card.style.zIndex = 1;
+      //       }
+      //       card.style.transition = "transform 0.2s";
+      //     });
+      //     return;
+      //   }
+      // }
+
+      // 기본(중앙 기준) 스케일
       cards.forEach((card) => {
         const cardRect = card.getBoundingClientRect();
         const cardCenterY = cardRect.top + cardRect.height / 2;
@@ -84,14 +118,13 @@ function SiteList() {
       </div>
       <div className="site-list-cards-wrapper">
         <div className="site-list-cards" ref={scrollRef}>
+          <div className="virtual__scroll"></div>
           {siteList.map((site, index) => (
             <SiteCard site={site} index={index} />
           ))}
+          <div className="virtual__scroll"></div>
         </div>
       </div>
-      {/* <div className="box1"></div> */}
-      {/* <div className="box2"></div> */}
-
       <div className="feat-box">
         <div className="feat-item hack-check">
           <p>해킹 여부 확인</p>

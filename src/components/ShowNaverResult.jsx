@@ -15,6 +15,7 @@ function ShowNaverResult() {
     if (location.hash) {
       const id = decodeURIComponent(location.hash.replace("#", ""));
       const element = document.getElementById(id);
+      console.log(element);
       if (element) {
         const rect = element.getBoundingClientRect();
         const absoluteElementTop = rect.top + window.pageYOffset;
@@ -34,7 +35,7 @@ function ShowNaverResult() {
     "티파니",
     "GS Shop",
     "알바몬",
-    "디올",
+    "대성마이맥",
     "아디다스",
     "티파니",
     "어니언",

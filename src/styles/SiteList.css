@@ -25,7 +25,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 42px;
+  margin-top: 80px;
+  overflow: hidden;
 }
 
 /* .site-list-cards {
@@ -34,43 +35,26 @@
 .site-list-cards {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-height: 90vh;
+  align-items: flex-start;
+  /* max-height: 90vh; */
+  max-height: 800px;
   overflow-y: scroll;
-  /* gap: -6px; */
   scroll-behavior: smooth;
   position: relative;
-
-  /* 스크롤바 숨기기 (브라우저 호환 포함) */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-top: -180px;
 }
 
 .site-list-cards::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
-.box1 {
-  width: 998px;
-  height: 119px;
-  margin-top: 18px;
-  margin-left: 221px;
-  background: #ababab;
-  box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-}
-
-.box2 {
-  width: 782px;
-  height: 70px;
-  margin-top: 18px;
-  margin-left: 329px;
-  background: #7e7e7e;
-  box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
+.virtual__scroll {
+  padding: 120px 0;
 }
 
 .site-list-container .feat-box {
-  margin-top: 165px;
+  margin-top: 100px;
   padding-bottom: 166px;
 }
