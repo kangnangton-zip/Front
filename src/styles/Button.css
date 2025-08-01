@@ -8,3 +8,7 @@
   font-size: 60px;
   line-height: 73px;
 }
+
+.button:hover {
+  background-color: #7121f2;
+}

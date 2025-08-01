@@ -8,6 +8,10 @@ body {
   background-color: #191919;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo-text {
   font-family: "Inter";
   font-style: italic;

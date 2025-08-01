@@ -1,14 +1,15 @@
 header {
-  padding-top: 60px;
+  padding-top: 40px;
   width: 100%;
-  height: 200px;
+  height: 144px;
 }
 
-.header-logo {
+.header-logo .header-link {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: #ffffff;
 }
 
 .logo-container .logo-img {

@@ -1,9 +1,11 @@
 footer {
   padding-top: 40px;
+  padding-left: 90px;
+  padding-bottom: 32px;
   background-color: #ffffff;
 }
 
-.footer-logo {
+.footer-logo .footer-link {
   display: flex;
   align-items: center;
   padding-left: 162px;
@@ -31,14 +33,15 @@ footer {
 
 .footer-info .comapny-info p {
   color: #000000;
+  margin-top: 8px;
   font-size: 18px;
 }
 
 .footer-info .team-name {
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 58px;
   color: #000000;
 }

@@ -1,8 +1,34 @@
+import { useNavigate } from "react-router-dom";
 import siteList from "../assets/siteList.js";
 import "../styles/SiteList.css";
 import Button from "./Button";
+import { useEffect, useRef } from "react";
 
 function SiteList() {
+  const scrollRef = useRef(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const onWheel = (e) => {
+      if (e.deltaY === 0) return;
+      e.preventDefault();
+      el.scrollLeft += e.deltaY;
+    };
+
+    el.addEventListener("wheel", onWheel, { passive: false });
+
+    return () => {
+      el.removeEventListener("wheel", onWheel);
+    };
+  }, []);
+
+  const goToAccount = () => {
+    navigate("/account");
+  };
+
   return (
     <div className="site-list-container">
       <div className="site-list-header">
@@ -12,19 +38,25 @@ function SiteList() {
         </h1>
         <p className="header-text">2025년 해킹된 사이트들을 정리합니다.</p>
       </div>
-      <div className="site-list-cards">
-        {siteList.map((site, index) => (
-          <div className="site-card" key={index}>
-            <div className="card-left">
-              <img src={site.imgUrl} alt={site.name} className="site-img"></img>
-              <h1 className="site-name">{site.name}</h1>
+      <div className="site-list-cards-wrapper">
+        <div className="site-list-cards">
+          {siteList.map((site, index) => (
+            <div className="site-card" key={index}>
+              <div className="card-left">
+                <img
+                  src={site.imgUrl}
+                  alt={site.name}
+                  className="site-img"
+                ></img>
+                <h1 className="site-name">{site.name}</h1>
+              </div>
+              <div className="card-right">
+                <div className="site-date">{site.date}</div>
+                <div className="site-description">{site.description}</div>
+              </div>
             </div>
-            <div className="card-right">
-              <div className="site-date">{site.date}</div>
-              <div className="site-description">{site.description}</div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div className="box1"></div>
       <div className="box2"></div>
@@ -32,7 +64,7 @@ function SiteList() {
       <div className="feat-box">
         <div className="feat-item hack-check">
           <p>해킹 여부 확인</p>
-          <Button />
+          <Button onClick={goToAccount} />
         </div>
       </div>
     </div>

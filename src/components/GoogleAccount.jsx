@@ -26,29 +26,29 @@ function GoogleAccount() {
               <div className="account">
                 <div className="profie-img"></div>
                 <div className="account-text-box">
-                  <p className="account-id">이름</p>
-                  <p className="account-email">이메일주소</p>
+                  <p className="account-id">김강냉</p>
+                  <p className="account-email">01034762742ab@gmail.com</p>
                 </div>
               </div>
               <div className="account">
                 <div className="profie-img"></div>
                 <div className="account-text-box">
                   <p className="account-id">이름</p>
-                  <p className="account-email">이메일주소</p>
+                  <p className="account-email">bergi4025@gmail.com</p>
                 </div>
               </div>
               <div className="account">
                 <div className="profie-img"></div>
                 <div className="account-text-box">
                   <p className="account-id">이름</p>
-                  <p className="account-email">이메일주소</p>
+                  <p className="account-email">id01034665629@gmail.com</p>
                 </div>
               </div>
               <div className="account">
                 <div className="profie-img"></div>
                 <div className="account-text-box">
                   <p className="account-id">이름</p>
-                  <p className="account-email">이메일주소</p>
+                  <p className="account-email">mijsl4608@gmail.com</p>
                 </div>
               </div>
               <div className="another account">

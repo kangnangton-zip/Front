@@ -1,8 +1,18 @@
 import "../styles/MainContent.css";
 import hackImg from "../assets/main_img01.png";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 function MainContent() {
+  const navigate = useNavigate();
+
+  const goToAccount = () => {
+    navigate("/account");
+  };
+
+  const goToSites = () => {
+    navigate("/sites");
+  };
   return (
     <main>
       <div className="main-container">
@@ -35,11 +45,11 @@ function MainContent() {
           <div className="feat-box">
             <div className="feat-item hack-check">
               <p>해킹 여부 확인</p>
-              <Button />
+              <Button onClick={goToAccount} />
             </div>
             <div className="feat-item list-check">
               <p>해킹된 사이트 확인</p>
-              <Button />
+              <Button onClick={goToSites} />
             </div>
           </div>
         </div>

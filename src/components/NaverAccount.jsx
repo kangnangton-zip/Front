@@ -22,15 +22,15 @@ function NaverAccount() {
             <div className="account-selection-right">
               <div className="account">
                 <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
+                <p className="account-id">netstat3476@naver.com</p>
               </div>
               <div className="account">
                 <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
+                <p className="account-id">bellerose0923@naver.com</p>
               </div>
               <div className="account">
                 <div className="profie-img"></div>
-                <p className="account-id">아이디</p>
+                <p className="account-id">joo060531jooha@naver.com</p>
               </div>
               <div className="account">
                 <div className="profie-img"></div>
