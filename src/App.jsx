@@ -7,12 +7,12 @@ import NaverAccount from "./components/NaverAccount";
 import GoogleAccount from "./components/GoogleAccount";
 import ShowGooglePage from "./pages/ShowGooglePage";
 import ShowNaverPage from "./pages/ShowNaverPage";
-import ScrollToTop from "./utils/ScroolToTop";
+// import ScrollToTop from "./utils/ScroolToTop";
 
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/index" element={<MainPage />} />
         <Route path="/account" element={<AccountSelPage />} />
